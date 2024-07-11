@@ -1,0 +1,195 @@
+/* Import custom font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/* Player container */
+
+.player {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.player:hover {
+    transform: scale(1.05);
+}
+
+
+/* Song information */
+
+.song-info h2,
+.song-info h3,
+.song-info h4 {
+    margin: 5px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.song-info h3 {
+    font-size: 1.2em;
+    color: #ffeb3b;
+}
+
+.song-info h4 {
+    font-size: 1em;
+    color: #03a9f4;
+}
+
+
+/* Controls */
+
+.controls button {
+    background: #ff6f61;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.controls button:hover {
+    background: #ff4f3a;
+    transform: scale(1.1);
+}
+
+
+/* Progress container */
+
+.progress-container {
+    margin: 10px 0;
+}
+
+.progress-container input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+    background: #ff6f61;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.progress-container input[type="range"]::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffeb3b;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.progress-container input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+
+/* Volume control */
+
+.volume-control {
+    margin: 10px 0;
+}
+
+.volume-control input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+    background: #03a9f4;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.volume-control input[type="range"]::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffeb3b;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.volume-control input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+
+/* Playlist */
+
+.playlist {
+    margin: 10px 0;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.playlist ul li {
+    background: #ff6f61;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-weight: 700;
+}
+
+.playlist ul li:hover {
+    background: #ff4f3a;
+    transform: scale(1.05);
+}
+
+
+/* Add song form */
+
+.add-song {
+    margin: 10px 0;
+}
+
+.add-song input {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    width: calc(100% - 22px);
+    /* Full width minus padding */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+}
+
+.add-song button {
+    background: #ff6f61;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    width: 100%;
+    font-weight: 700;
+}
+
+.add-song button:hover {
+    background: #ff4f3a;
+    transform: scale(1.05);
+}
